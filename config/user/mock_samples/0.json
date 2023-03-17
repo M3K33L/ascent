@@ -1,0 +1,35 @@
+{
+  "global": {
+    "NAME": "Lazega Dulin"
+  },
+  "scalebar_length": 100,
+  "nerve": {
+    "a": 500,
+    "b": 500,
+    "rot": 0
+  },
+  "figure": {
+    "fig_margin": 1.2,
+    "fig_dpi": 1500
+  },
+  "populate": {
+    "mode": "EXPLICIT",
+    "min_fascicle_separation": 10,
+    "Fascicles": [
+      {
+        "centroid_x": -150,
+        "centroid_y": 0,
+        "a": 100,
+        "b": 100,
+        "rot": 0
+      },
+      {
+        "centroid_x": 100,
+        "centroid_y": 0,
+        "a": 200,
+        "b": 200,
+        "rot": 0
+      }
+    ]
+  }
+}
