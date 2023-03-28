@@ -11,8 +11,6 @@ https://seaborn.pydata.org/generated/seaborn.swarmplot.html
 RUN THIS FROM REPOSITORY ROOT
 """
 
-import sys
-sys.path.append("D:/Program Files/ascent-master/ascent")
 import os
 
 import matplotlib.pyplot as plt

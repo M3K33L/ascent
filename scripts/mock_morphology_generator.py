@@ -8,12 +8,13 @@ source code can be found on the following GitHub repository:
 https://github.com/wmglab-duke/ascent
 """
 
+import sys
+sys.path.append("D:/Program Files/ascent-master/ascent")
 import os
 import time
 
 from src.core import MockSample
 from src.utils import Config, Configurable, SetupMode
-
 
 def run(args):
     """Generate a mock sample morphology.

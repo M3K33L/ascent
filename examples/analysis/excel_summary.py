@@ -9,8 +9,11 @@ The source code can be found on the following GitHub repository: https://github.
 RUN THIS FROM REPOSITORY ROOT
 """
 
-import os
 import sys
+sys.path.append("D:/Program Files/ascent-master/ascent")
+
+import os
+
 
 from src.core.query import Query
 
@@ -26,7 +29,7 @@ q = Query(
 ).run()
 
 q.excel_output(
-    '/Users/jakecariello/Desktop/test.xlsx',
+    'Users\Danny\Desktop\test.xlsx',
     sample_keys=[['sample'], ['sex']],
     model_keys=[['cuff', 'rotate', 'add_ang']],
     individual_indices=False,

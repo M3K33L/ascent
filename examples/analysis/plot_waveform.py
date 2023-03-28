@@ -9,8 +9,11 @@ The source code can be found on the following GitHub repository: https://github.
 RUN THIS FROM REPOSITORY ROOT
 """
 
+import sys
+sys.path.append("D:/Program Files/ascent-master/ascent")
 import json
 import os
+import src
 
 import matplotlib.pyplot as plt
 
