@@ -1,0 +1,90 @@
+
+D:\Program Files\ascent-master\ascent\submit\n_sims\0_0_0_0>nrniv -nobanner -dll "D:\Program Files\ascent-master\ascent\submit/MOD_Files/nrnmech.dll" -c "strdef sim_path" -c "sim_path=\"n_sims\\0_0_0_0"" -c "inner_ind=0" -c "fiber_ind=4" -c "stimamp_top=-1" -c "stimamp_bottom=-0.01" -c "fiberD=8.7" -c "deltaz=1000.0000" -c "axonnodes=13" -c "saveflag_end_ap_times=0" -c "saveflag_runtime=0" -c "saveflag_ap_loctime=0" -c "load_file(\"launch.hoc\")" blank.hoc 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+	1 
+Running stimamp_top = -1 
+Checking for AP
+N_APs_top = 1 
+Running stimamp_bottom = -0.01 
+Checking for AP
+N_APs_bottom = 0 
+Bounds set - entering bisection search
+stimamp = -0.505 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.505 
+stimampbottom -0.01 
+stimamp = -0.2575 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.2575 
+stimampbottom -0.01 
+stimamp = -0.13375 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.13375 
+stimampbottom -0.01 
+stimamp = -0.071875 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.071875 
+stimampbottom -0.01 
+stimamp = -0.0409375 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.0409375 
+stimampbottom -0.01 
+stimamp = -0.02546875 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 0 
+stimamptop -0.0409375 
+stimampbottom -0.02546875 
+stimamp = -0.033203125 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.033203125 
+stimampbottom -0.02546875 
+stimamp = -0.029335937 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.029335937 
+stimampbottom -0.02546875 
+stimamp = -0.027402344 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.027402344 
+stimampbottom -0.02546875 
+stimamp = -0.026435547 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 0 
+stimamptop -0.027402344 
+stimampbottom -0.026435547 
+stimamp = -0.026918945 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 0 
+stimamptop -0.027402344 
+stimampbottom -0.026918945 
+stimamp = -0.027160645 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+stimamptop -0.027160645 
+stimampbottom -0.026918945 
+stimamp = -0.027039795 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+Done searching! stimamp: -0.027039795 mA for extracellular and nA for intracellular (check flag_whichstim)
+Checking for AP
+N_APs = 1 
+Threshold: -0.027039795 mA for extracellular and nA for intracellular (check flag_whichstim)
+Running stimamp in final check for AP.
+Checking for AP
+N_APs = 1 
