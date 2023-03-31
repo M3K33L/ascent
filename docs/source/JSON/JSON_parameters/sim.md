@@ -207,7 +207,6 @@ following syntax:
     "dt_initSS": Double,
     "threshold": {
       "value": Double,
-      "n_min_aps": Integer,
       "ap_detect_location": Double
     },
     "bounds_search": {
@@ -229,7 +228,6 @@ following syntax:
     "dt_initSS": Double,
     "threshold": {
       "value": Double,
-      "n_min_aps": Integer,
       "ap_detect_location": Double
     },
     "bounds_search": {
@@ -789,12 +787,6 @@ which times/locations ([NEURON Scripts](../../Code_Hierarchy/NEURON)). Required.
     finding protocols (i.e., `“ACTIVATION_THRESHOLDS”` and
     `“BLOCK_THRESHOLDS”`) only. Optional for `"FINITE_AMPLITUDES"` protocol.
 
-  - `“n_min_aps”`: The value (Integer) is the number of action
-    potentials that must be detected for the amplitude to be
-    considered above threshold. Required for threshold finding
-    protocols (i.e., `“ACTIVATION_THRESHOLDS”` and
-    `“BLOCK_THRESHOLDS”`) only. Ignored for `"FINITE_AMPLITUDES"` protocol
-
   - `“ap_detect_location”`: The value (Double) is the location
     (range 0 to 1, i.e., 0.9 is 90% of the fiber length in the
     +z-direction) where action potentials are detected for threshold
@@ -832,15 +824,15 @@ which times/locations ([NEURON Scripts](../../Code_Hierarchy/NEURON)). Required.
         activates/blocks, decrease the lower bound by a “step”
         percentage (e.g., 10 for 10%).
 
-  - `“top”`: The value (Double) is the upper-bound stimulation
+  - `“top”`: The value (Double, units: mA) is the upper-bound stimulation
     amplitude first tested in a bisection search for thresholds.
     Required.
 
-  - `“bottom”`: The value (Double) is the lower-bound stimulation
+  - `“bottom”`: The value (Double, units: mA) is the lower-bound stimulation
     amplitude first tested in a bisection search for thresholds.
     Required.
 
-  - `“step”`: The value (Double) is the incremental increase/decrease
+  - `“step”`: The value (Double, units: mA) is the incremental increase/decrease
     of the upper/lower bound in the bisection search. Required.
 
     - If `“ABSOLUTE_INCREMENT”`, the value (Double, unit: mA) is an
