@@ -17,7 +17,7 @@
     "scale_input": "MASK",
     "nerve": "PRESENT",
     "deform": "NONE",
-    "ci_perineurium_thickness": "MEASURED",
+    "ci_perineurium_thickness": "GRINBERG_2008",
     "reshape_nerve": "CIRCLE",
     "shrinkage_definition": "LENGTH_FORWARDS",
     "contour_approximation": "SIMPLE"
@@ -35,5 +35,51 @@
   "plot": false,
   "plot_folder": false,
   "render_deform": false,
-  "Morphology": null
+  "Morphology": {
+    "Nerve": {
+      "area": 183443.49113236967
+    },
+    "Fascicles": [
+      {
+        "outer": {
+          "area": 8288.0,
+          "x": -145.134521484375,
+          "y": -0.8925881385803223,
+          "a": 102.66558837890625,
+          "b": 102.81536102294922,
+          "angle": 148.1398162841797
+        },
+        "inners": [
+          {
+            "area": 7326.77284065679,
+            "x": -145.13900756835938,
+            "y": 0.0009641274809837341,
+            "a": 96.5857925415039,
+            "b": 96.63617706298828,
+            "angle": 90.9017562866211
+          }
+        ]
+      },
+      {
+        "outer": {
+          "area": 33050.0,
+          "x": 96.78298950195312,
+          "y": -0.980224609375,
+          "a": 205.10670471191406,
+          "b": 205.23391723632812,
+          "angle": 171.33116149902344
+        },
+        "inners": [
+          {
+            "area": 29333.49414763847,
+            "x": 96.7569808959961,
+            "y": -0.0006347708404064178,
+            "a": 193.24693298339844,
+            "b": 193.2489776611328,
+            "angle": 146.7596893310547
+          }
+        ]
+      }
+    ]
+  }
 }

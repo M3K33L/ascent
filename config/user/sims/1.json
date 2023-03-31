@@ -1,12 +1,12 @@
 {
     "pseudonym": "Lazega Dulin Sim 1",
-    "n_dimensions": 0,
+    "n_dimensions": 1,
     "active_srcs": {
       "Purdue.json": [[1, -1]],
       "default": [[1, -1]]
     },
     "fibers": {
-      "mode": "MRG_Interpolate",
+      "mode": "MRG_INTERPOLATION",
       "xy_trace_buffer": 5.0,
       "z_parameters": {
         "diameter": [5, 10],
@@ -19,7 +19,7 @@
       "xy_parameters": {
         "mode": "UNIFORM_DENSITY",
         "top_down": true,
-        "target_density": 0.7,
+        "target_density": 0.3,
         "minimum_number": 1,
         "maximum_number": 100,
         "target_number": 50,
