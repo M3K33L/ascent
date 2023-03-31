@@ -13,7 +13,7 @@
     "nerve": 10.0
   },
   "modes": {
-    "mask_input": "INNER_AND_OUTER_COMPILED",
+    "mask_input": "INNERS",
     "scale_input": "MASK",
     "nerve": "PRESENT",
     "deform": "NONE",
