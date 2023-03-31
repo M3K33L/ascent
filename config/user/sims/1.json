@@ -31,48 +31,13 @@
         "off": 55,
         "stop": 80
       },
-  // NEED TO DECIDE ON ALL THIS FIRST
-      // EXAMPLE WAVEFORM for MONOPHASIC_PULSE_TRAIN
-      "MONOPHASIC_PULSE_TRAIN": {
-        "pulse_width": Double,
-        "pulse_repetition_freq": Double,
-        "digits": Integer
-      },
-  
-      // EXAMPLE WAVEFORM for SINUSOID
-      "SINUSOID": {
-        "pulse_repetition_freq": Double,
-        "digits": Integer
-      },
-  
-      // EXAMPLE WAVEFORM for BIPHASIC_FULL_DUTY
-      "BIPHASIC_FULL_DUTY": {
-        "pulse_repetition_freq": Double,
-        "digits": Integer
-      },
-  
-      // EXAMPLE WAVEFORM for BIPHASIC_PULSE_TRAIN
-      "BIPHASIC_PULSE_TRAIN": {
-        "pulse_width": Double,
-        "inter_phase": Double,
-        "pulse_repetition_freq": Double,
-        "digits": Integer
-      },
-  
-      // EXAMPLE WAVEFORM for BIPHASIC_PULSE_TRAIN_Q_BALANCED_UNEVEN_PW
+
       "BIPHASIC_PULSE_TRAIN_Q_BALANCED_UNEVEN_PW": {
         "pulse_width_1": Double,
         "pulse_width_2": Double,
         "inter_phase": Double,
         "pulse_repetition_freq": Double,
         "digits": Integer
-      },
-  
-      // EXAMPLE WAVEFORM for EXPLICIT
-      "EXPLICIT": {
-        "index": Integer,
-        "dt_atol": Double,
-        "period_repeats ": Integer
       }
     },
     "intracellular_stim": {
@@ -100,18 +65,6 @@
       }
     },
   
-    // EXAMPLE PROTOCOL for FINITE_AMPLITUDES
-    "protocol": {
-      "mode": "FINITE_AMPLITUDES",
-      "initSS": Double,
-      "dt_initSS": Double,
-      "amplitudes": [Double, Double, ...],
-      "threshold": {
-        "value": Double,
-        "ap_detect_location": Double
-      }
-    },
-  
     // EXAMPLE PROTOCOL for ACTIVATION_THRESHOLD
     "protocol": {
       "mode": "ACTIVATION_THRESHOLD", //String
@@ -123,29 +76,6 @@
         "ap_detect_location": Double
       },
       "bounds_search": { // This one is for Bralen to decide
-        "mode": String,
-        "top": Double,
-        "bottom": Double,
-        "step": Double
-      },
-      "termination_criteria": {
-        "mode": "PERCENT_DIFFERENCE",
-        "percent": 1
-      }
-    },
-  
-    // EXAMPLE PROTOCOL for BLOCK_THRESHOLD
-    // Are we going to use this one or activation threshold?
-    "protocol": {
-      "mode": "BLOCK_THRESHOLD", // String
-      "initSS": Double,
-      "dt_initSS": Double,
-      "threshold": {
-        "value": Double,
-        "n_min_aps": Integer,
-        "ap_detect_location": Double
-      },
-      "bounds_search": { 
         "mode": String,
         "top": Double,
         "bottom": Double,
