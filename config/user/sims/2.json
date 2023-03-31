@@ -2,7 +2,8 @@
     "pseudonym": "Lazega Dulin Sim 1",
     "n_dimensions": 1,
     "active_srcs": {
-      "LD1.json": [[-0.33333, 1, -0.33333, -0.33333]]
+      "LD1.json": [[-1, 3, -1, -1]],
+      "default": [[1, -1]]
     },
     "fibers": {
       "mode": "MRG_INTERPOLATION",

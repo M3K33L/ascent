@@ -1,0 +1,296 @@
+{
+  "description": "Fist pass tripolar electrode with transverse contact",
+  "code": "LD1",
+  "instances": [
+    {
+      "type": "CuffFill_Primitive",
+      "label": "LD1 Fill",
+      "def": {
+        "Radius": "R_out_LD1+Thk_fill_LD1",
+        "Thk": "Thk_fill_LD1",
+        "L": "L_LD1+2*Thk_fill_LD1",
+        "Center": "Center_LD1",
+        "x_shift": "0",
+        "y_shift": "0"
+      },
+      "materials": [
+        {
+          "info": "fill",
+          "label_index": 0
+        }
+      ]
+    },
+    {
+      "type": "TubeCuff_Primitive",
+      "label": "LD1 Cuff",
+      "def": {
+        "N_holes": "N_holes_LD1",
+        "Tube_theta": "Theta_LD1",
+        "Center": "Center_LD1",
+        "R_in": "R_in_LD1",
+        "R_out": "R_out_LD1",
+        "Tube_L": "L_LD1",
+        "Rot_def": "Rot_def_LD1",
+        "D_hole": "D_hole_LD1",
+        "Buffer_hole": "Buffer_hole_LD1",
+        "L_holecenter_cuffseam": "L_holecenter_cuffseam_LD1",
+        "Pitch_holecenter_holecenter": "Pitch_holecenter_holecenter_LD1"
+      },
+      "materials": [
+        {
+          "info": "insulator",
+          "label_index": 2
+        }
+      ]
+    },
+    {
+      "type": "RectangleContact_Primitive",
+      "label": "LD1 Contact 1",
+      "def": {
+        "Center": "Center_LD1-(pitch_LD1/2)",
+        "Rotation_angle": "theta_pos_contact2_LD1 [deg]",
+        "Rect_w": "w_contact_LD1",
+        "Rect_z": "z_contact_LD1",
+        "Rect_fillet": "fillet_contact_LD1",
+        "L_cuff": "L_cuff_LD1",
+        "R_in": "R_in_LD1",
+        "Rect_recess": "recess_LD1",
+        "Rect_thk": "thk_contact_LD1",
+        "Rect_def": "Rect_def_LD1"
+      },
+      "materials": [
+        {
+          "info": "conductor",
+          "label_index": 11
+        },
+        {
+          "info": "recess",
+          "label_index": 6
+        }
+      ]
+    },
+    {
+      "type": "RectangleContact_Primitive",
+      "label": "LD1 Contact 2",
+      "def": {
+        "Center": "Center_LD1",
+        "Rotation_angle": "theta_pos_contact2_LD1 [deg]",
+        "Rect_w": "w_contact_LD1",
+        "Rect_z": "z_contact_LD1",
+        "Rect_fillet": "fillet_contact_LD1",
+        "L_cuff": "L_cuff_LD1",
+        "R_in": "R_in_LD1",
+        "Rect_recess": "recess_LD1",
+        "Rect_thk": "thk_contact_LD1",
+        "Rect_def": "Rect_def_LD1"
+      },
+      "materials": [
+        {
+          "info": "conductor",
+          "label_index": 11
+        },
+        {
+          "info": "recess",
+          "label_index": 6
+        }
+      ]
+    },
+    {
+      "type": "RectangleContact_Primitive",
+      "label": "LD1 Contact 3",
+      "def": {
+        "Center": "Center_LD1+(pitch_LD1/2)",
+        "Rotation_angle": "theta_pos_contact3_LD1 [deg]",
+        "Rect_w": "w_contact_LD1",
+        "Rect_z": "z_contact_LD1",
+        "Rect_fillet": "fillet_contact_LD1",
+        "L_cuff": "L_cuff_LD1",
+        "R_in": "R_in_LD1",
+        "Rect_recess": "recess_LD1",
+        "Rect_thk": "thk_contact_LD1",
+        "Rect_def": "Rect_def_LD1"
+      },
+      "materials": [
+        {
+          "info": "conductor",
+          "label_index": 11
+        },
+        {
+          "info": "recess",
+          "label_index": 6
+        }
+      ]
+    },
+    {
+      "type": "RectangleContact_Primitive",
+      "label": "LD1 Contact 4",
+      "def": {
+        "Center": "Center_LD1",
+        "Rotation_angle": "theta_pos_contact4_LD1 [deg]",
+        "Rect_w": "w_contact_LD1",
+        "Rect_z": "z_contact_LD1",
+        "Rect_fillet": "fillet_contact_LD1",
+        "L_cuff": "L_cuff_LD1",
+        "R_in": "R_in_LD1",
+        "Rect_recess": "recess_LD1",
+        "Rect_thk": "thk_contact_LD1",
+        "Rect_def": "Rect_def_LD1"
+      },
+      "materials": [
+        {
+          "info": "conductor",
+          "label_index": 11
+        },
+        {
+          "info": "recess",
+          "label_index": 6
+        }
+      ]
+    }
+  ],
+  "params": [
+    {
+      "name": "N_holes_LD1",
+      "expression": "0",
+      "description": "Can have the value of 1 or 2. Adds conical shaped holes in TubeCuff. If 1 hole, centered longitudinally in cuff. If 2, evenly spaced by Pitch_holecenter_holecenter about longitudinal center of cuff"
+    },
+    {
+      "name": "Theta_LD1",
+      "expression": "percent_circ_cuff_LD1*360 [deg]",
+      "description": "Angular coverage of cuff"
+    },
+    {
+      "name": "Center_LD1",
+      "expression": "z_nerve/2",
+      "description": "Z-position of cuff center"
+    },
+    {
+      "name": "R_in_LD1",
+      "expression": "0.5 [mm]",
+      "description": "Cuff inner diameter"
+    },
+    {
+      "name": "R_out_LD1",
+      "expression": "R_in_LD1+thk_cuff_LD1",
+      "description": "Cuff outer diameter"
+    },
+    {
+      "name": "L_LD1",
+      "expression": "4.1917 [mm]",
+      "description": "Length of cuff"
+    },
+    {
+      "name": "percent_circ_cuff_pre_LD1",
+      "expression": "1",
+      "description": "Wrap of the cuff (as compared to 360 degree wrap for continuous insulation) before expansion to accommodate the nerve"
+    },
+    {
+      "name": "percent_circ_cuff_LD1",
+      "expression": "1",
+      "description": "Wrap of the cuff (as compared to 360 degree wrap for continuous insulation) after expansion to accommodate the nerve"
+    },
+    {
+      "name": "Rot_def_LD1",
+      "expression": "0",
+      "description": "Rotates TubeCuff CCW by angle"
+    },
+    {
+      "name": "D_hole_LD1",
+      "expression": "NaN",
+      "description": "Diameter of holes in TubeCuff at the surface of the inner diameter"
+    },
+    {
+      "name": "Buffer_hole_LD1",
+      "expression": "NaN",
+      "description": "Used so that the cone used to cut hole in the cuff extends half this distance from the inner and outer edge of the part"
+    },
+    {
+      "name": "L_holecenter_cuffseam_LD1",
+      "expression": "NaN",
+      "description": "Distance from edge of the cuff seam to the center of the holes"
+    },
+    {
+      "name": "Pitch_holecenter_holecenter_LD1",
+      "expression": "NaN",
+      "description": "Distance between cuff holes, pitch from center to center along the length of the cuff"
+    },
+    {
+      "name": "w_contact_LD1",
+      "expression": "0.475 [mm]",
+      "description": "Contact width"
+    },
+    {
+      "name": "z_contact_LD1",
+      "expression": "0.475 [mm]",
+      "description": "Z-length of contact"
+    },
+    {
+      "name": "fillet_contact_LD1",
+      "expression": "0.1 [mm]",
+      "description": "Fillet for RectangleContact corners"
+    },
+    {
+      "name": "L_cuff_LD1",
+      "expression": "4.1917 [mm]",
+      "description": "Length of cuff"
+    },
+    {
+      "name": "thk_contact_LD1",
+      "expression": "0.018 [mm]",
+      "description": "Thickness of contact"
+    },
+    {
+      "name": "recess_LD1",
+      "expression": "100 [um]",
+      "description": "Depth of fill material into the cuff before the contact. This is used to create an associated recess/fill domain with a contact."
+    },
+    {
+      "name": "thk_cuff_LD1",
+      "expression": "0.275 [mm]",
+      "description": "Cuff thickness"
+    },
+    {
+      "name": "theta_pos_contact1_LD1",
+      "expression": "90 [deg]",
+      "description": "Rotational position of contact 1 in LD1.json"
+    },
+    {
+      "name": "theta_pos_contact2_LD1",
+      "expression": "90 [deg]",
+      "description": "Rotational position of contact 2 in LD1.json"
+    },
+    {
+      "name": "theta_pos_contact3_LD1",
+      "expression": "90 [deg]",
+      "description": "Rotational position of contact 3 in LD1.json"
+    },
+    {
+      "name": "theta_pos_contact4_LD1",
+      "expression": "180 [deg]",
+      "description": "Rotational position of contact 4 in LD1.json"
+    },
+    {
+      "name": "pitch_LD1",
+      "expression": "(1.025+0.475) [mm]",
+      "description": "z-distance between contacts"
+    },
+    {
+      "name": "Thk_fill_LD1",
+      "expression": "100 [um]",
+      "description": "Distance fill extends beyond cuff boundary"
+    },
+    {
+      "name": "thk_medium_gap_internal_LD1",
+      "expression": "10 [um]",
+      "description": "Gap between cuff and nerve"
+    },
+    {
+      "name": "Rect_def_LD1",
+      "expression": "1",
+      "description": "1 to preserve surface area, 2 to preserve shape of contact to the dimensions provided"
+    }
+  ],
+  "expandable": false,
+  "angle_to_contacts_deg": 90,
+  "offset": {}
+}
