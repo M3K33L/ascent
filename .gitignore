@@ -134,7 +134,7 @@ dmypy.json
 
 # data
 samples/
-# submit/
+submit/
 data/tmp/
 data/*.pickle
 data/

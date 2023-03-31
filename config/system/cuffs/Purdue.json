@@ -148,7 +148,7 @@
     },
     {
       "name": "r_cuff_in_pre_P",
-      "expression": "317.5 [um]",
+      "expression": "510 [um]",
       "description": "Cuff resting inner diameter"
     },
     {

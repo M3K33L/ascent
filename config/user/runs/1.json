@@ -1,16 +1,16 @@
 {
-  "pseudonym": "Lazega Dulin Run 1",
-  "sample": 1,
   "models": [1],
-  "sims": [1],
+  "endo_only_solution": true,
   "recycle_meshes": true,
   "models_exit_status": [true],
-  "endo_only_solution": true,
   "keep": {
     "bases": true,
     "debug_geom": true,
     "mesh": true
   },
+  "sims": [1],
   "popup_plots": true,
+  "pseudonym": "Lazega Dulin Run 1",
+  "sample": 1,
   "export_behavior": "selective"
 }

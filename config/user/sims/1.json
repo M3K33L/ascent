@@ -17,14 +17,14 @@
       },
 
       "xy_parameters": {
-        "mode": "UNIFORM_DENSITY",
-        "top_down": true,
-        "target_density": 0.3,
-        "minimum_number": 1,
-        "maximum_number": 100,
-        "target_number": 50,
-        "seed": 123
+        "mode": "WHEEL",
+        "spoke_count": 6,
+        "point_count_per_spoke": 8,
+        "find_centroid": true,
+        "angle_offset": 0,
+        "angle_offset_is_in_degrees": true
       }
+  
     },
     "waveform": {
       "global": {

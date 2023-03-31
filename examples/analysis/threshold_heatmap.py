@@ -23,11 +23,12 @@ q = Query(
     {
         'partial_matches': True,
         'include_downstream': True,
-        'indices': {'sample': [0], 'model': [0], 'sim': [0]},
+        'indices': {'sample': [1], 'model': [1], 'sim': [1], 'n_sim': [0]},
     }
 ).run()
 
 # Build heatmap
+q.threshold_data.query('nsim==0')
 heatmaps(data=q.threshold_data(), cuff_orientation=True)
 plt.title('Activation threshold heatmap')
 
