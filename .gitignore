@@ -134,12 +134,12 @@ dmypy.json
 
 # data
 samples/
-submit/
+# submit/
 data/tmp/
 data/*.pickle
 data/
-input/
-*/user/*
+# input/
+# */user/*
 
 # samples
 *.class*
